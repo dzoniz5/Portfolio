@@ -1,0 +1,203 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+  width: 100%;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.4;
+  background-image:linear-gradient(
+    115deg,
+    rgba(33, 33, 36, 0.9),
+    rgba(27, 27, 50, 0.9)
+  ), url(back.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  
+ 
+
+}
+section{
+  display: flex;
+    
+}
+#navbar {
+  justify-content: flex-end;
+  background: #be3144;
+  
+  
+}
+#navbar a{
+  color: aliceblue;
+}
+.nav-list a{
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem auto;
+}
+.navbar li a{
+  font-size: 1.5rem;
+  color: aliceblue;
+  
+}
+.navbar li a:hover{
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: lightblue;
+  padding-bottom: 13px;
+  
+  
+}
+.navbar .nav-link{
+  display: inline;
+}
+
+#welcome-section{
+  height: 100vh;
+  width: auto;
+  text-align: center;
+  
+  
+}
+#welcome-text{
+  padding-top: 20%;
+}
+#welcome-section p{
+  color: #be3144;
+  font-size: 2rem;
+  font-style: italic;
+}
+#welcome-section h1{
+  font-size: 3rem;
+}
+h1,h2{
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+img{
+  display: block;
+  width: 100%;
+}
+#projects{
+  display: block;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 50px;
+  
+  
+  
+}
+#profile-link{
+  margin: 50px auto;
+}
+#projects h2{
+  padding-top: 7%;
+  position: relative;
+  text-align: center;
+  border-bottom: 2px solid aliceblue;
+  max-width: 500px;
+  margin: 0 auto 1.5rem auto;
+  
+}
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2rem;
+  width: 100%;
+  position: relative;
+  padding: 25px;
+
+}
+
+.projects-grid a{
+  background:#303841;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  
+  border-radius: 10px;
+   
+}
+.projects-grid img{
+    height: 88%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    
+    
+}
+.project-tile {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: aliceblue;
+  padding: 5px;
+  margin: 0;
+  
+}
+.projects-grid a:hover{
+  text-decoration: none;
+  box-shadow: 0 8px 6px -6px #be3144;
+  position: relative;
+  bottom: 3px;
+   
+  transition: 0.4s ease-out; 
+  
+
+}
+.code{
+  color: #303841;
+}
+#projects a:hover .code{
+  transition: color 0.4s ease-out;
+  color: #be3144;
+}
+
+#footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 !important;
+  background: #303841;
+}
+#footer h2{
+  font-size: 4rem;
+}
+#footer p{
+  color: aliceblue;
+  font-style: italic;
+  font-size: 1.3rem;
+  
+}
+#footer a{
+  background: #303841;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+  position: relative;
+  top: 20px;
+}
+#footer a:hover{
+  transform: translateY(8px);
+}
+#padd{
+  padding: 0 !important;
+}
+
+
+
+@media (max-width: 1200px){
+  html{
+  font-size: inherit;
+}
+}
